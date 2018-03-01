@@ -1,218 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="This is Steven Taveras's Front End Development and Graphic Design website. I have samples of my java script work and plan on updating the sites look and add a blog">
+
     <title>Steven Taveras | Front End Developer</title>
-    <!--for remote bootsraps styles-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+    <!--for remote bootstraps styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
     <!--custom style sheet-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body id="index">
-    <nav class="navbar navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button id="button-press" type="button" class="navbar-toggle collapsed btn-lg" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span> 
-					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-				</button>
-                <a href="http://www.steventaveras.com/" target="_blank"><img class="img-responsive logo" src="http://steventaveras.com/images/StevenTaverasSiteLogo.gif" alt="image of steven taveras logo" title="Steven Taveras's portfolio"></a>
-            </div>
-            <a href="#"></a>
-            <div class="collapse navbar-collapse" id="navbar-toggle">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About </a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+<body>
+    <div class="container">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <a class="navbar-brand" href="#" id="home">Steven Taveras</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="jumbotron" id="home">
-        <div class="row">
-            <div class="container">
-                <div class="intro-text col-lg-7 col-md-7 col-sm-7 col-xs-8">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="intro-text col-sm-6 col-md-6 col-lg-6">
                     <h1>Front End Developer</h1>
                     <p>Illustrator/Graphic Designer</p>
                     <p>All in one at your fingertips</p>
                     <p>Open doors to creativity</p>
                 </div>
-                <img class="biopic col-lg-5 col-md-5 col-sm-5 col-xs-4 img-responsive" src="https://s19.postimg.org/512athv5f/profile_picture.jpg" alt="Steven taveras Bio pic" title="Image of Steven taveras with glasses">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <img class="img-fluid" src="https://s19.postimg.org/512athv5f/profile_picture.jpg" alt="Steven taveras Bio pic" title="Image of Steven taveras with glasses">
+                </div>
             </div>
         </div>
-    </div>
 
-    <section id="about">
-        <div class="container about">
+        <div class="container about" id="about">
             <h2 class="text-center">A Little About Me</h2>
+            <hr>
             <p>Hello! I'm an Artist, Graphic Designer and now putting most of my energy into Front End Development. I have been coding for about five years and am based in the NYC.</p>
             <p>I attend Borough Of Manhattan Community College where I am working to get my Associates in Multimedia Programming. I plan to continue to my bachelors in Computer Science/Programming. I also use FreeCodeCamp and a number of other resources to further my skills in HTML5, CSS3, JavaScript and more.</p>
             <p>When I'm not coding I'm sometimes playing Videogames, Watching some good shows or hanging out with friends and family.
             </p>
         </div>
-    </section>
 
-    <div class="variety-pack" id="my-expertise">
-        <div class="container text-center">
+        <div class="text-center" id="my-expertise">
             <h2>My Expertise</h2>
             <h3>Skills in all Phases of the design process</h3>
             <hr/>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="img-responsive">
-                        <img src="https://s19.postimg.org/qsnwcb1ar/responsive-icon.png" alt="vector of screens" title="image of responsive design icon">
-                    </div>
-                    <div>
-                        <h3>Responsive Design</h3>
-                        <p>Using Clean code and responsive frameworks like Bootstrap, i start with a clean canvas and allow the content to rule the design. Making your sites look good at any screen size with mobile first design or progressive degradation.</p>
-                    </div>
+                    <img class="img-fluid" src="https://s19.postimg.org/qsnwcb1ar/responsive-icon.png" alt="vector of screens" title="image of responsive design icon">
+                    <h3>Responsive Design</h3>
+                    <p class="text-justify">Using Clean code and responsive frameworks like Bootstrap, i start with a clean canvas and allow the content to rule the design. Making your sites look good at any screen size with mobile first design or progressive degradation.</p>
                 </div>
                 <div class="col-md-4">
-                    <div class="img-responsive">
-                        <img src="https://s19.postimg.org/hkvnvm9o3/ux-icon.png" alt="image of ux icon" title="UX icon graphic">
-                    </div>
-                    <div>
-                        <h3>UX Design</h3>
-                        <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. The design should be beautiful, elegant and functional for the best user experience possible.</p>
-                    </div>
+                    <img class="img-fluid" src="https://s19.postimg.org/hkvnvm9o3/ux-icon.png" alt="image of ux icon" title="UX icon graphic">
+                    <h3>UX Design</h3>
+                    <p class="text-justify">I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. The design should be beautiful, elegant and functional for the best user experience possible.</p>
                 </div>
                 <div class="col-md-4">
-                    <div class="img-responsive">
-                        <img src="https://s19.postimg.org/pqdptrq77/graphic-icon.png" alt="image of graphic design icon" title="Graphic Design icon">
-                    </div>
-                    <div>
-                        <h3>Graphic Design</h3>
-                        <p>With my Graphic Design background i am comfortable designing logos, business cards and all sorts of printed materials. Using the Adobe creative suite. Need new icons or or simple animations? I’m at your service.</p>
-                    </div>
+                    <img class="img-fluid" src="https://s19.postimg.org/pqdptrq77/graphic-icon.png" alt="image of graphic design icon" title="Graphic Design icon">
+                    <h3>Graphic Design</h3>
+                    <p class="text-justify">With my Graphic Design background i am comfortable designing logos, business cards and all sorts of printed materials. Using the Adobe creative suite. Need new icons or or simple animations? I’m at your service.</p>
                 </div>
             </div>
             <button class="btn btn-primary">Resume</button>
         </div>
-    </div>
 
-    <div class="variety-pack" id="portfolio">
-        <div class="container text-center">
-            <h2>Portfolio</h2>
-            <div id="frontend">
-                <h3>Front-End Projects</h3>
-                <hr/>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="https://dreamsniper.github.io/FreeCodeCamp/" class="thumbnail img-responsive" target="_blank">
-								<img src="https://s19.postimg.org/3qnk1glkz/fcc-tribute.jpg" alt="neil gaiman tribute page" title="tribute page freecodecamp.com"></a>
-                            <figcaption>Responsive Web Page: Tribute page</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="https://dreamsniper.github.io/MMP210/week13/index.html" class="thumbnail img-responsive" target="_blank">
-								<img src="https://s19.postimg.org/mizf4yhyb/spot-a-fish.jpg" alt="Spot-A-Fish game" title="Spot a fish javascript game using p5.play"></a>
-                            <figcaption>HTML/CSS/JavaScript/P5.play Game: Spot-A-Fish</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="https://codepen.io/dreamsniper/full/OgbYBZ/" class="thumbnail img-responsive" target="_blank">
-								<img src="https://s19.postimg.org/n8i7hbas3/random-quote.jpg" alt="Random Quote generator" title="Random Quote Machine freecodecamp.com"></a>
-                            <figcaption>HTML/CSS/JavaScript App: Random Quote Generator</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="#" class="thumbnail img-responsive">
-								<img src="https://s19.postimg.org/ykusz2olv/coin-toss.jpg" alt="coin toss Image" title="Coin toss game image"></a>
-                            <figcaption>HTML/CSS/JavaScript Game: Coin-Toss</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="https://codepen.io/dreamsniper/full/vJWwVY/" class="thumbnail img-responsive">
-								<img src="https://s19.postimg.org/4iq80c543/weather-app-image.jpg" alt="weather app image" title="Freecodecamp weather app"></a>
-                            <figcaption>HTML/CSS/JavaScript App: Local Weather</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="https://dreamsniper.github.io/Election_Project-MMP240/" class="thumbnail img-responsive">
-							<img src="https://raw.githubusercontent.com/dreamsniper/images/master/election-project.JPG" alt="election project" title="2016 election info page"></a>
-                            <figcaption>Mobile First HTML/CSS/JavaScript: 2016 Presidential Election</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="#" class="thumbnail img-responsive">
-							<img src="https://s19.postimg.org/zaxcgoptv/dreamsniper-design.jpg" alt="Wordpress webcomic" title="The Blue earth Wordpress webcomic"></a>
-                            <figcaption>Wordpress powered Webcomic: The Blue Earth</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="#" class="thumbnail img-responsive">
-							<img src="https://s19.postimg.org/43ypcres3/email.jpg" alt="image of email signature" title="The Blue earth Wordpress webcomic"></a>
-                            <figcaption>HTML E-mail Signatures</figcaption>
-                        </figure>
+        <div id="portfolio">
+            <div class="container text-center">
+                <h2>Portfolio</h2>
+                <div id="frontend">
+                    <h3>Front-End Projects</h3>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="https://dreamsniper.github.io/FreeCodeCamp/" class="thumbnail img-responsive" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/3qnk1glkz/fcc-tribute.jpg" alt="neil gaiman tribute page" title="tribute page freecodecamp.com"></a>
+                                <figcaption>Responsive Web Page: Tribute page</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="https://dreamsniper.github.io/MMP210/week13/index.html" class="thumbnail img-responsive" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/mizf4yhyb/spot-a-fish.jpg" alt="Spot-A-Fish game" title="Spot a fish javascript game using p5.play"></a>
+                                <figcaption>HTML/CSS/JavaScript/P5.play Game: Spot-A-Fish</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="https://codepen.io/dreamsniper/full/OgbYBZ/" class="thumbnail img-responsive" target="_blank">
+								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/n8i7hbas3/random-quote.jpg" alt="Random Quote generator" title="Random Quote Machine freecodecamp.com"></a>
+                                <figcaption>HTML/CSS/JavaScript App: Random Quote Generator</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="#" class="thumbnail img-responsive">
+								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/ykusz2olv/coin-toss.jpg" alt="coin toss Image" title="Coin toss game image"></a>
+                                <figcaption>HTML/CSS/JavaScript Game: Coin-Toss</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="https://codepen.io/dreamsniper/full/vJWwVY/" class="thumbnail img-responsive">
+								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/4iq80c543/weather-app-image.jpg" alt="weather app image" title="Freecodecamp weather app"></a>
+                                <figcaption>HTML/CSS/JavaScript App: Local Weather</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="https://dreamsniper.github.io/Election_Project-MMP240/" class="thumbnail img-responsive">
+							<img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/dreamsniper/images/master/election-project.JPG" alt="election project" title="2016 election info page"></a>
+                                <figcaption>Mobile First HTML/CSS/JavaScript: 2016 Presidential Election</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="#" class="thumbnail img-responsive">
+							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/zaxcgoptv/dreamsniper-design.jpg" alt="Wordpress webcomic" title="The Blue earth Wordpress webcomic"></a>
+                                <figcaption>Wordpress powered Webcomic: The Blue Earth</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="#" class="thumbnail img-responsive">
+							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/43ypcres3/email.jpg" alt="image of email signature" title="The Blue earth Wordpress webcomic"></a>
+                                <figcaption>HTML E-mail Signatures</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="graphic-design">
-                <h3>Graphic Design Projects</h3>
-                <hr/>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" class="thumbnail img-responsive">
-							<img src="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" alt="Human Traffick poster" title="Poster for National Human Traffic Center"></a>
-                            <figcaption>Adobe Photoshop - Human Rights Campaign Poster</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" class="thumbnail img-responsive">
-							<img src="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" alt="Word Poem Image" title="Edgar Allen Poe poem image"></a>
-                            <figcaption>Adobe Illustrator - Edgar Allen Poe Word Poem</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="#" class="thumbnail img-responsive">
-							<img src="https://s19.postimg.org/wtll9eqhv/color-booklet.jpg" alt="color and human emotion cover" title="Cover for booklet on color and the human emotion"></a>
-                            <figcaption>Adobe InDesign Project- Color Brochure Booklet</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="#" class="thumbnail img-responsive">
-							<img src="https://s19.postimg.org/gilhd2ykj/rockwell.jpg" alt="Rockwell typography" title="Images of Typeface in use for Rockwell"></a>
-                            <figcaption>Typography: Typeface Study on Rockwell</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                        <figure>
-                            <a href="#" class="thumbnail img-responsive">
-							<img src="https://s19.postimg.org/bwpd4r06r/cuphead-layout.jpg" alt="Fictional magazine cover" title="image of Magazine created for class project"></a>
-                            <figcaption>Typography: Game Magazine Layout</figcaption>
-                        </figure>
+                <div id="graphic-design">
+                    <h3>Graphic Design Projects</h3>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" class="thumbnail img-responsive">
+							<img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" alt="Human Traffick poster" title="Poster for National Human Traffic Center"></a>
+                                <figcaption>Adobe Photoshop - Human Rights Campaign Poster</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" class="thumbnail img-responsive">
+							<img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" alt="Word Poem Image" title="Edgar Allen Poe poem image"></a>
+                                <figcaption>Adobe Illustrator - Edgar Allen Poe Word Poem</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="#" class="thumbnail img-responsive">
+							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/wtll9eqhv/color-booklet.jpg" alt="color and human emotion cover" title="Cover for booklet on color and the human emotion"></a>
+                                <figcaption>Adobe InDesign Project- Color Brochure Booklet</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="#" class="thumbnail img-responsive">
+							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/gilhd2ykj/rockwell.jpg" alt="Rockwell typography" title="Images of Typeface in use for Rockwell"></a>
+                                <figcaption>Typography: Typeface Study on Rockwell</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="#" class="thumbnail img-responsive">
+							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/bwpd4r06r/cuphead-layout.jpg" alt="Fictional magazine cover" title="image of Magazine created for class project"></a>
+                                <figcaption>Typography: Game Magazine Layout</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <section id="contact">
-        <div class="container">
+        <section id="contact">
             <h2>Contact Me</h2>
             <form id="contact-form" method="post" action="contact.php">
-
-                <div class="messages"></div>
 
                 <div class="controls">
 
@@ -262,36 +252,40 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <p><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+                            <p><strong>*</strong> These fields are required.</p>
                         </div>
                     </div>
                 </div>
 
             </form>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <div>
-                <a href="https://codepen.io/dreamsniper/" target="_blank"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/steven.taveras1" target="_blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/TheDreamsniper" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-                <a href="https://github.com/dreamsniper" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/steven-taveras-81475b75/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-                <a href="https://plus.google.com/u/0/+StevenTaveras_dreamsniper" target="_blank"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/channel/UCFVYSh4PC84c34Etdagmc1Q" target="_blank"><i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i></a>
-                <a href="https://forum.freecodecamp.com/users/dreamsniper/summary" target="_blank"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+        <footer class="footer">
+            <div class="container text-center">
+                <div>
+                    <a href="https://codepen.io/dreamsniper/" target="_blank"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/steven.taveras1" target="_blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/TheDreamsniper" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/dreamsniper" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/steven-taveras-81475b75/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://plus.google.com/u/0/+StevenTaveras_dreamsniper" target="_blank"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/channel/UCFVYSh4PC84c34Etdagmc1Q" target="_blank"><i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://forum.freecodecamp.com/users/dreamsniper/summary" target="_blank"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+                </div>
+                <p>Copyright &copy; 2017 Steven Taveras</p>
+                <p><a href="www.dreamsniper.com">www.dreamsniper.com</a></p>
+                <p><a href="#home">Back to Top</a></p>
             </div>
-            <p>Copyright &copy; 2017 Steven Taveras</p>
-            <p><a href="www.dreamsniper.com">www.dreamsniper.com</a></p>
-            <p><a href="#home">Back to Top</a></p>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <!--end of main container-->
+
     <script src="https://use.fontawesome.com/9bacc3de6f.js"></script>
-    <!-- Load CDN version of jQuery. For other versions visit this page: https://code.jquery.com/jquery/ -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
 </html>
