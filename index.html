@@ -11,7 +11,7 @@
 
     <!--for remote bootstraps styles-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    
+
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
 
@@ -21,12 +21,9 @@
 
 <body>
     <div class="container">
-
         <!-- Navigation -->
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <a class="navbar-brand" href="#" id="home">STEVEN TAVERAS</a>
             <div class="collapse navbar-collapse text-right" id="navbarNav">
                 <ul class="navbar-nav justify-content-end">
@@ -55,21 +52,26 @@
                     <p>Open doors to creativity</p>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <img class="img-fluid" src="https://s19.postimg.org/512athv5f/profile_picture.jpg" alt="Steven taveras Bio pic" title="Image of Steven taveras with glasses">
+                    <img class="img-fluid" src="images/bio-pic.jpg" alt="Steven taveras Bio pic" title="Image of Steven taveras with glasses">
                 </div>
             </div>
         </div>
 
-        <div class="container about" id="about">
+        <div class="about" id="about">
             <h2 class="text-center">A Little About Me</h2>
             <hr>
-            <p>Hello! I'm an Artist, Graphic Designer and now putting most of my energy into Front End Development. I have been coding for about five years and am based in the NYC.</p>
-            <p>I attend Borough Of Manhattan Community College where I am working to get my Associates in Multimedia Programming. I plan to continue to my bachelors in Computer Science/Programming. I also use FreeCodeCamp and a number of other resources to further my skills in HTML5, CSS3, JavaScript and more.</p>
-            <p>When I'm not coding I'm sometimes playing Videogames, Watching some good shows or hanging out with friends and family.
-            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Hello! I'm an Artist and a Graphic Designer and now putting most of my energy into Front End Development. I have been coding for a few years slowly growing more confident with various programming languages and seeing where my strengths lie. my and am based in the NYC.</p>
+                    <p>I attend Borough Of Manhattan Community College where I am working to get my Associates in Multimedia Programming.</p>
+                </div>
+                <div class="col-md-6">
+                    <p> I plan to continue to my bachelors in Computer Science/Programming. I also use FreeCodeCamp and a number of other resources to further my skills in HTML5, CSS3, JavaScript and more.</p>
+                    <p>When I'm not coding I'm sometimes playing Videogames, Watching some good shows or hanging out with friends and family.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="text-center" id="my-expertise">
+        <div class="text-center my-expertise" id="my-expertise">
             <h2>My Expertise</h2>
             <h3>Skills in all Phases of the design process</h3>
             <hr/>
@@ -90,10 +92,10 @@
                     <p class="text-left">With my Graphic Design background i am comfortable designing logos, business cards and all sorts of printed materials. Using the Adobe creative suite. Need new icons or or simple animations? I’m at your service.</p>
                 </div>
             </div>
-            <button class="btn btn-primary">Resume</button>
+            <button class="btn">Resume</button>
         </div>
 
-        <div id="portfolio">
+        <div class="portfolio" id="portfolio">
             <div class="container text-center">
                 <h2>Portfolio</h2>
                 <div id="frontend">
@@ -102,11 +104,41 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="https://dreamsniper.github.io/FreeCodeCamp/" class="thumbnail img-responsive" target="_blank">
+                                <a href="#" class="thumbnail img-responsive" target="_blank" data-toggle="modal" data-target="#tribute-page-modal">
 								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/3qnk1glkz/fcc-tribute.jpg" alt="neil gaiman tribute page" title="tribute page freecodecamp.com"></a>
                                 <figcaption>Responsive Tribute Page</figcaption>
                             </figure>
                         </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="tribute-page-modal" tabindex="-1" role="dialog" aria-labelledby="FreeCodeCamp Tribute Page" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div class="modal-bg">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLongTitle">Responsive Tribute Page</h5>
+                                            <h6 class="project-for">for FreeCodeCamp</h6>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="modal-description">I created this page as a project for the online course at <a href="https://www.freecodecamp.org/" target="_blank">www.freecodecamp.org</a> The subject i used for the project was one of my favorite writers, Neil Gaiman and his dark fantasy books.</p>
+                                            
+                                            <ul class="tools-used">
+                                                <li>HTML/CSS/SASS</li>
+                                                <li>JavaScript/jQuery</li>
+                                                <li>Bootstraps Framework</li>
+                                            </ul>
+                                            <button class="btn"><a href="https://dreamsniper.github.io/FreeCodeCamp/" target="_blank">Learn more about this project</a></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
                                 <a href="https://dreamsniper.github.io/MMP210/week13/index.html" class="thumbnail img-responsive" target="_blank">
@@ -123,28 +155,21 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="#" class="thumbnail img-responsive">
+                                <a href="http://steventaveras.com/gallery/cointoss.html" class="thumbnail" target="_blank">
 								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/ykusz2olv/coin-toss.jpg" alt="coin toss Image" title="Coin toss game image"></a>
                                 <figcaption>Coin-Toss Game</figcaption>
                             </figure>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="https://codepen.io/dreamsniper/full/vJWwVY/" class="thumbnail img-responsive">
+                                <a href="https://codepen.io/dreamsniper/full/vJWwVY/" class="thumbnail" target="_blank">
 								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/4iq80c543/weather-app-image.jpg" alt="weather app image" title="Freecodecamp weather app"></a>
                                 <figcaption>Local Weather App</figcaption>
                             </figure>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="https://dreamsniper.github.io/Election_Project-MMP240/" class="thumbnail img-responsive">
-							<img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/dreamsniper/images/master/election-project.JPG" alt="election project" title="2016 election info page"></a>
-                                <figcaption>Mobile First 2016 Presidential Election Site</figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <figure>
-                                <a href="#" class="thumbnail img-responsive">
+                                <a href="http://www.dreamsniper.com/" class="thumbnail" target="_blank">
 							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/zaxcgoptv/dreamsniper-design.jpg" alt="Wordpress webcomic" title="The Blue earth Wordpress webcomic"></a>
                                 <figcaption>Wordpress powered Webcomic</figcaption>
                             </figure>
@@ -165,35 +190,35 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" class="thumbnail img-responsive">
+                                <a href="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" class="thumbnail">
 							<img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" alt="Human Traffick poster" title="Poster for National Human Traffic Center"></a>
                                 <figcaption>Human Rights Campaign Poster</figcaption>
                             </figure>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" class="thumbnail img-responsive">
+                                <a href="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" class="thumbnail">
 							<img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" alt="Word Poem Image" title="Edgar Allen Poe poem image"></a>
                                 <figcaption>Edgar Allen Poe Word Poem</figcaption>
                             </figure>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="#" class="thumbnail img-responsive">
+                                <a href="#" class="thumbnail">
 							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/wtll9eqhv/color-booklet.jpg" alt="color and human emotion cover" title="Cover for booklet on color and the human emotion"></a>
                                 <figcaption>Color Brochure Booklet</figcaption>
                             </figure>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="#" class="thumbnail img-responsive">
+                                <a href="#" class="thumbnail">
 							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/gilhd2ykj/rockwell.jpg" alt="Rockwell typography" title="Images of Typeface in use for Rockwell"></a>
                                 <figcaption>Rockwell Typeface Study</figcaption>
                             </figure>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="#" class="thumbnail img-responsive">
+                                <a href="#" class="thumbnail">
 							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/bwpd4r06r/cuphead-layout.jpg" alt="Fictional magazine cover" title="image of Magazine created for class project"></a>
                                 <figcaption>Game Magazine Layout</figcaption>
                             </figure>
@@ -203,65 +228,61 @@
             </div>
         </div>
 
-        <section id="contact">
+        <div class="contact" id="contact">
             <h2>Contact Me</h2>
             <form id="contact-form" method="post" action="contact.php">
 
-                <div class="controls">
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Firstname *</label>
-                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_lastname">Lastname *</label>
-                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_name">Firstname *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_email">Email *</label>
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_phone">Phone</label>
-                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p><strong>*</strong> These fields are required.</p>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_lastname">Lastname *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_phone">Phone</label>
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message *</label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><strong>*</strong> These fields are required.</p>
+                    </div>
+                </div>
             </form>
-        </section>
+        </div>
 
         <footer class="footer">
             <div class="container text-center">
