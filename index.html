@@ -25,8 +25,8 @@
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <a class="navbar-brand" href="#" id="home">STEVEN TAVERAS</a>
-            <div class="collapse navbar-collapse text-right" id="navbarNav">
-                <ul class="navbar-nav justify-content-end">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
@@ -73,8 +73,8 @@
         </div>
         <div class="text-center my-expertise" id="my-expertise">
             <h2>My Expertise</h2>
-            <h3>Skills in all Phases of the design process</h3>
             <hr/>
+            <h3>Skills in all Phases of the design process</h3>
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <img class="img-fluid" src="https://s19.postimg.org/qsnwcb1ar/responsive-icon.png" alt="vector of screens" title="image of responsive design icon">
@@ -98,13 +98,56 @@
         <div class="portfolio" id="portfolio">
             <div class="container text-center">
                 <h2>Portfolio</h2>
+                <hr/>
                 <div id="frontend">
                     <h3>Front-End Projects</h3>
-                    <hr/>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="#" class="thumbnail img-responsive" target="_blank" data-toggle="modal" data-target="#tribute-page-modal">
+                                <a href="#" data-toggle="modal" data-target="#dreamsniper-site-modal">
+							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/zaxcgoptv/dreamsniper-design.jpg" alt="Wordpress webcomic" title="The Blue earth Wordpress webcomic"></a>
+                                <figcaption>Wordpress powered Webcomic</figcaption>
+                            </figure>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="dreamsniper-site-modal" tabindex="-1" role="dialog" aria-labelledby="Wordpress Powered Webcomic" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div class="modal-bg">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLongTitle">Custom Wordpress Webcomic</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="project-for"><u>Class Project</u></h6>
+                                            <p class="modal-description">This was a final project for a class concentrating on creating Wordpress websites. I chose to create a webcomic based off of my own comic book "The Blue Earth".</p>
+                                            <p><u>Project Requirements</u>:</p>
+                                            <p>Custom Worpress Theme</p>
+                                            <p>Fully functional Wordpress blog.</p>
+
+                                            <p><u>Tools Used</u>:</p>
+
+                                            <ul class="tools-used">
+                                                <li>HTML/CSS</li>
+                                                <li>Bootstraps Framework</li>
+                                                <li>Wordpress</li>
+                                                <li>PHP</li>
+                                            </ul>
+                                            <button class="btn"><a href="https://dreamsniper-webcomic-dreamsniper.c9users.io/" target="_blank">Learn more about this project</a></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <figure>
+                                <a href="#" data-toggle="modal" data-target="#tribute-page-modal">
 								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/3qnk1glkz/fcc-tribute.jpg" alt="neil gaiman tribute page" title="tribute page freecodecamp.com"></a>
                                 <figcaption>Responsive Tribute Page</figcaption>
                             </figure>
@@ -116,14 +159,19 @@
                                     <div class="modal-bg">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="ModalLongTitle">Responsive Tribute Page</h5>
-                                            <h6 class="project-for">for FreeCodeCamp</h6>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                                         </div>
                                         <div class="modal-body">
-                                            <p class="modal-description">I created this page as a project for the online course at <a href="https://www.freecodecamp.org/" target="_blank">www.freecodecamp.org</a> The subject i used for the project was one of my favorite writers, Neil Gaiman and his dark fantasy books.</p>
-                                            
+                                            <h6 class="project-for"><u>A Project for FreeCodeCamp</u></h6>
+                                            <p class="modal-description">I created this page as a project for an online course at <a href="https://www.freecodecamp.org/" target="_blank">www.freecodecamp.org</a> The subject i used for the project was one of my favorite writers, Neil Gaiman and his dark fantasy books.</p>
+                                            <p><u>Project Requirements</u>:</p>
+                                            <p>User Story 1: I can view a tribute page with an image and text.</p>
+                                            <p>User Story 2: I can click on a link that will take me to an external website with further information on the topic.</p>
+
+                                            <p><u>Tools Used</u>:</p>
+
                                             <ul class="tools-used">
                                                 <li>HTML/CSS/SASS</li>
                                                 <li>JavaScript/jQuery</li>
@@ -138,70 +186,186 @@
                                 </div>
                             </div>
                         </div>
- 
+
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="https://dreamsniper.github.io/MMP210/week13/index.html" class="thumbnail img-responsive" target="_blank">
+                                <a href="#" data-toggle="modal" data-target="#spot-a-fish-modal">
 								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/mizf4yhyb/spot-a-fish.jpg" alt="Spot-A-Fish game" title="Spot a fish javascript game using p5.play"></a>
                                 <figcaption>Spot-A-Fish Game</figcaption>
                             </figure>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <figure>
-                                <a href="https://codepen.io/dreamsniper/full/OgbYBZ/" class="thumbnail img-responsive" target="_blank">
-								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/n8i7hbas3/random-quote.jpg" alt="Random Quote generator" title="Random Quote Machine freecodecamp.com"></a>
-                                <figcaption>Random Quote Generator</figcaption>
-                            </figure>
+                        <!-- Modal -->
+                        <div class="modal fade" id="spot-a-fish-modal" tabindex="-1" role="dialog" aria-labelledby="Spot A Fish Game" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div class="modal-bg">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLongTitle">Spot-A-Fish Game</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="project-for"><u>Class Project</u></h6>
+                                            <p class="modal-description">This was a final project for one of my Multimedia Programmimg classes. The project was meant as an exercise in learning to use <a href="https://p5js.org/" target="_blank">p5.js</a> a programming language that was made for artists, designers, educators and beginners.</p>
+                                            <p>The game is about keeping the oceans clean to sa. The rules are simple, catch the cans before they kill the fish using a net that acts as a mouse trail.</p>
+
+                                            <p><u>Tools Used</u>:</p>
+
+                                            <ul class="tools-used">
+                                                <li>HTML/CSS</li>
+                                                <li>p5.js/JavaScript</li>
+                                            </ul>
+
+                                            <button class="btn"><a href="https://dreamsniper.github.io/MMP210/week13/index.html" target="_blank">Learn more about this project</a></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
+
+
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="http://steventaveras.com/gallery/cointoss.html" class="thumbnail" target="_blank">
+                                <a href="#" data-toggle="modal" data-target="#cointoss-modal">
 								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/ykusz2olv/coin-toss.jpg" alt="coin toss Image" title="Coin toss game image"></a>
                                 <figcaption>Coin-Toss Game</figcaption>
                             </figure>
                         </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="cointoss-modal" tabindex="-1" role="dialog" aria-labelledby="Coin Toss Game" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div class="modal-bg">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLongTitle">Coin Toss Game</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="project-for"><u>Class Project</u></h6>
+                                            <p class="modal-description">This was a final project for one of my Multimedia Programmimg classes. The project was a lesson in manipulating the DOM using JavaScript. </p>
+                                            <p><u>Project Requirements</u>:</p>
+                                            <p>The main requirements for this project were to include 5 javaScript interactions.</p>
+                                            <p>I successfully created the game with many interactions including input and state changes.</p>
+
+                                            <p><u>Tools Used</u>:</p>
+
+                                            <ul class="tools-used">
+                                                <li>HTML/CSS/SASS</li>
+                                                <li>Animate.css</li>
+                                                <li>JavaScript/jQuery</li>
+                                            </ul>
+                                            <button class="btn"><a href="http://steventaveras.com/gallery/cointoss.html" target="_blank">Learn more about this project</a></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="https://codepen.io/dreamsniper/full/vJWwVY/" class="thumbnail" target="_blank">
+                                <a href="#" data-toggle="modal" data-target="#local-weather-modal">
 								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/4iq80c543/weather-app-image.jpg" alt="weather app image" title="Freecodecamp weather app"></a>
                                 <figcaption>Local Weather App</figcaption>
                             </figure>
                         </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="local-weather-modal" tabindex="-1" role="dialog" aria-labelledby="FreeCodeCamp Local Weather App" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div class="modal-bg">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLongTitle">Local Weather App</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="project-for"><u>A Project for FreeCodeCamp</u></h6>
+                                            <p class="modal-description">This was a project for <a href="https://www.freecodecamp.org/" target="_blank">www.freecodecamp.org</a> This project was an excercise in using API's and Geolaction services in order to pinpoint your location and use it to populate the DOM with information about your local weather.</p>
+                                            <p><u>Project Requirements</u>:</p>
+                                            <p>User Story 1: I can see the weather in my current location.</p>
+                                            <p>User Story 2: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.</p>
+                                            <p>User Story 3: I can push a button to toggle between Fahrenheit and Celsius.</p>
+
+                                            <p><u>Tools Used</u>:</p>
+
+                                            <ul class="tools-used">
+                                                <li>HTML/CSS/SASS</li>
+                                                <li>JavaScript/jQuery</li>
+                                                <li>Bootstraps Framework</li>
+                                                <li>OpenWeatherMap API</li>
+                                                <li>Google Geolocation Services</li>
+                                            </ul>
+                                            <button class="btn"><a href="https://codepen.io/dreamsniper/full/vJWwVY/" target="_blank">Learn more about this project</a></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
-                                <a href="http://www.dreamsniper.com/" class="thumbnail" target="_blank">
-							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/zaxcgoptv/dreamsniper-design.jpg" alt="Wordpress webcomic" title="The Blue earth Wordpress webcomic"></a>
-                                <figcaption>Wordpress powered Webcomic</figcaption>
+                                <a href="#" data-toggle="modal" data-target="#random-quote-modal">
+								<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/n8i7hbas3/random-quote.jpg" alt="Random Quote generator" title="Random Quote Machine freecodecamp.com"></a>
+                                <figcaption>Random Quote Generator</figcaption>
                             </figure>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <figure>
-                                <a href="#" class="thumbnail img-responsive">
-							<img class="img-fluid img-thumbnail" src="https://s19.postimg.org/43ypcres3/email.jpg" alt="image of email signature" title="The Blue earth Wordpress webcomic"></a>
-                                <figcaption>HTML E-mail Signatures</figcaption>
-                            </figure>
+                        <!-- Modal -->
+                        <div class="modal fade" id="random-quote-modal" tabindex="-1" role="dialog" aria-labelledby="FreeCodeCamp Random Quote Generator" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div class="modal-bg">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLongTitle">Random Quote generator</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="project-for"><u>A Project for FreeCodeCamp</u></h6>
+                                            <p class="modal-description">This was a project for <a href="https://www.freecodecamp.org/" target="_blank">www.freecodecamp.org</a> The main point of this project was to learn to use outside API's to retrieve information from remote sources and display it using Ajax methods.</p>
+                                            <p><u>Project Requirements</u>:</p>
+                                            <p>User Story 1: I can click a button to show me a new random quote.</p>
+                                            <p>User Story 2: I can press a button to tweet out a quote.</p>
+
+                                            <p><u>Tools Used</u>:</p>
+
+                                            <ul class="tools-used">
+                                                <li>HTML/CSS/SASS</li>
+                                                <li>JavaScript/jQuery</li>
+                                                <li>Forismatic API</li>
+                                            </ul>
+                                            <button class="btn"><a href="https://codepen.io/dreamsniper/full/OgbYBZ/" target="_blank">Learn more about this project</a></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+
                 <div id="graphic-design">
                     <h3>Graphic Design Projects</h3>
-                    <hr/>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <figure>
-                                <a href="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" class="thumbnail">
-							<img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/dreamsniper/images/master/human-traffic-poster.jpg" alt="Human Traffick poster" title="Poster for National Human Traffic Center"></a>
-                                <figcaption>Human Rights Campaign Poster</figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <figure>
-                                <a href="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" class="thumbnail">
-							<img class="img-fluid img-thumbnail" src="https://raw.githubusercontent.com/dreamsniper/images/master/word-poem-image.JPG" alt="Word Poem Image" title="Edgar Allen Poe poem image"></a>
-                                <figcaption>Edgar Allen Poe Word Poem</figcaption>
-                            </figure>
-                        </div>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                             <figure>
                                 <a href="#" class="thumbnail">
@@ -231,19 +395,11 @@
         <div class="contact" id="contact">
             <h2>Contact Me</h2>
             <form id="contact-form" method="post" action="contact.php">
-
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="form_name">Firstname *</label>
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_lastname">Lastname *</label>
-                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                            <label for="form_name">Name *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -256,16 +412,9 @@
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="form_phone">Phone</label>
-                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <div class="form-group">
                             <label for="form_message">Message *</label>
                             <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
@@ -276,25 +425,21 @@
                         <input type="submit" class="btn btn-success btn-send" value="Send message">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p><strong>*</strong> These fields are required.</p>
-                    </div>
-                </div>
+                <p><strong>*</strong> These fields are required.</p>
             </form>
         </div>
 
         <footer class="footer">
             <div class="container text-center">
                 <div>
-                    <a href="https://codepen.io/dreamsniper/" target="_blank"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
-                    <a href="https://www.facebook.com/steven.taveras1" target="_blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
-                    <a href="https://twitter.com/TheDreamsniper" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-                    <a href="https://github.com/dreamsniper" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/steven-taveras-81475b75/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-                    <a href="https://plus.google.com/u/0/+StevenTaveras_dreamsniper" target="_blank"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
-                    <a href="https://www.youtube.com/channel/UCFVYSh4PC84c34Etdagmc1Q" target="_blank"><i class="fa fa-youtube-square fa-3x" aria-hidden="true"></i></a>
-                    <a href="https://forum.freecodecamp.com/users/dreamsniper/summary" target="_blank"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://codepen.io/dreamsniper/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/steven.taveras1" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/TheDreamsniper" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/dreamsniper" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/steven-taveras-81475b75/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://plus.google.com/u/0/+StevenTaveras_dreamsniper" target="_blank"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/channel/UCFVYSh4PC84c34Etdagmc1Q" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://forum.freecodecamp.com/users/dreamsniper/summary" target="_blank"><i class="fa fa-free-code-camp fa-2x" aria-hidden="true"></i></a>
                 </div>
                 <p>Copyright &copy; 2017 Steven Taveras</p>
                 <p><a href="www.dreamsniper.com">www.dreamsniper.com</a></p>
