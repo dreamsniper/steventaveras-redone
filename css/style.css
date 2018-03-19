@@ -15,7 +15,8 @@ h1, h2{
 .jumbotron{
     font-weight: 400;
     font-size: 20px;
-     margin-bottom: 40px;
+    margin-bottom: 40px;
+    border-radius: 0px;
 }
 
 .about, .my-expertise, .portfolio, .contact{
@@ -25,4 +26,21 @@ h1, h2{
 
 .my-expertise h3{
     margin: 25px;
+}
+
+.img-thumbnail{
+    filter: grayscale(100%);
+}
+
+.img-thumbnail:hover{
+    filter: none;
+}
+
+i{
+    margin: .25%;
+}
+
+.contact{
+    border: 2px solid grey;
+    padding: 10px;
 }
