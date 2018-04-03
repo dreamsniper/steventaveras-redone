@@ -15,8 +15,20 @@ h1, h2{
 .jumbotron{
     font-weight: 400;
     font-size: 20px;
+    margin-top: 50px;
     margin-bottom: 40px;
     border-radius: 0px;
+}
+.jumbotron h1{
+    font-size: 50px;
+    margin-left: 15%;
+}
+
+.jumbotron p{
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 15%;
+    margin-top: 2%;
 }
 
 .about, .my-expertise, .portfolio, .contact{
@@ -28,8 +40,13 @@ h1, h2{
     margin: 25px;
 }
 
+.bio-pic{
+    width: 70%;
+}
+
 .img-thumbnail{
     filter: grayscale(100%);
+    margin: 20px auto 20px auto;
 }
 
 .img-thumbnail:hover{
@@ -49,4 +66,11 @@ i{
 }
 .final-product{
     margin: 20px;
+}
+p{
+    font-weight: 300;
+}
+iframe {
+    width: 400px;
+    height: 300px;
 }
