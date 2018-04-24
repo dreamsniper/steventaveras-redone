@@ -74,3 +74,8 @@ iframe {
     width: 400px;
     height: 300px;
 }
+
+.colorbooklet img{
+    margin: 1em;
+    width: 75%;
+}
