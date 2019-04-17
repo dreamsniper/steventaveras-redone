@@ -1,0 +1,113 @@
+//colors
+$gray: grey;
+
+//fonts
+$font_0: Josefin Sans;
+$font_1: sans-serif;
+
+body {
+    font-family: $font_0, $font_1;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.jumbotron {
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 0;
+
+    h1 {
+        font-size: 50px;
+        margin-left: 15%;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+}
+
+.about {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.my-expertise {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    h3 {
+        margin: 25px;
+    }
+}
+
+.portfolio {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px solid $gray;
+    padding: 10px;
+}
+
+.bio-pic {
+    width: 70%;
+}
+
+.img-thumbnail {
+    filter: grayscale(100%);
+    margin: 20px auto 20px auto;
+
+    &:hover {
+        filter: none;
+    }
+}
+
+i {
+    margin: .25%;
+}
+
+.process-pic {
+    margin: 10px;
+}
+
+.final-product {
+    margin: 20px;
+}
+
+p {
+    font-weight: 300;
+}
+
+iframe {
+    width: 400px;
+    height: 300px;
+}
+
+.resume-head {
+    margin-left: 15px;
+}
+
+a .navbar-brand {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.colorbooklet img {
+    margin: 1em;
+    width: 75%;
+}

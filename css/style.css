@@ -1,85 +1,81 @@
+body {
+  font-family: Josefin Sans, sans-serif; }
 
-body{
-    font-family: 'Josefin Sans', sans-serif;
-}
+h1 {
+  font-weight: 700; }
 
-a .navbar-brand{
-    font-weight: 700;
-    font-size: 25px;
-}
+h2 {
+  font-weight: 700; }
 
-h1, h2{
-    font-weight: 700;
-}
-
-.jumbotron{
-    font-weight: 400;
-    font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    border-radius: 0px;
-}
-.jumbotron h1{
+.jumbotron {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border-radius: 0; }
+  .jumbotron h1 {
     font-size: 50px;
-    margin-left: 15%;
-}
-
-.jumbotron p{
+    margin-left: 15%; }
+  .jumbotron p {
     font-size: 30px;
     font-weight: 400;
     margin-left: 15%;
-    margin-top: 2%;
-}
+    margin-top: 2%; }
 
-.about, .my-expertise, .portfolio, .contact{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+.about {
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
-.my-expertise h3{
-    margin: 25px;
-}
+.my-expertise {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .my-expertise h3 {
+    margin: 25px; }
 
-.bio-pic{
-    width: 70%;
-}
+.portfolio {
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
-.img-thumbnail{
-    filter: grayscale(100%);
-    margin: 20px auto 20px auto;
-}
+.contact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 2px solid grey;
+  padding: 10px; }
 
-.img-thumbnail:hover{
-    filter: none;
-}
+.bio-pic {
+  width: 70%; }
 
-i{
-    margin: .25%;
-}
+.img-thumbnail {
+  filter: grayscale(100%);
+  margin: 20px auto 20px auto; }
+  .img-thumbnail:hover {
+    filter: none; }
 
-.contact{
-    border: 2px solid grey;
-    padding: 10px;
-}
-.process-pic{
-    margin: 10px ;
-}
-.final-product{
-    margin: 20px;
-}
-p{
-    font-weight: 300;
-}
+i {
+  margin: .25%; }
+
+.process-pic {
+  margin: 10px; }
+
+.final-product {
+  margin: 20px; }
+
+p {
+  font-weight: 300; }
+
 iframe {
-    width: 400px;
-    height: 300px;
-}
+  width: 400px;
+  height: 300px; }
 
-.colorbooklet img{
-    margin: 1em;
-    width: 75%;
-}
+.resume-head {
+  margin-left: 15px; }
 
-.resume-head{
-    margin-left: 15px;
-}
+a .navbar-brand {
+  font-weight: 700;
+  font-size: 25px; }
+
+.colorbooklet img {
+  margin: 1em;
+  width: 75%; }
+
+/*# sourceMappingURL=style.css.map */
