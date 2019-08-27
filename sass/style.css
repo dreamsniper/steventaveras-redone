@@ -67,13 +67,8 @@ iframe {
   width: 400px;
   height: 300px; }
 
-.resume-head ul {
-  margin-left: 10px;
-  padding: 5px; }
-.resume-head li {
-  text-decoration: none;
-  display: inline;
-  margin-right: 10px; }
+.resume-head {
+  margin-left: 15px; }
 
 a .navbar-brand {
   font-weight: 700;
@@ -82,8 +77,5 @@ a .navbar-brand {
 .colorbooklet img {
   margin: 1em;
   width: 75%; }
-
-#Experience {
-  border-left: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */

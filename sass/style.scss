@@ -98,8 +98,19 @@ iframe {
     height: 300px;
 }
 
+.resume-description {}
+
 .resume-head {
-    margin-left: 15px;
+    ul {
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    li {
+        text-decoration: none;
+        display: inline;
+        margin-right: 10px;
+    }
 }
 
 a .navbar-brand {
@@ -110,4 +121,8 @@ a .navbar-brand {
 .colorbooklet img {
     margin: 1em;
     width: 75%;
+}
+
+#Experience {
+    border-left: 1px solid black;
 }
