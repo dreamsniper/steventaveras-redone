@@ -98,8 +98,6 @@ iframe {
     height: 300px;
 }
 
-.resume-description {}
-
 .resume-head {
     ul {
         margin-left: 10px;
@@ -129,4 +127,30 @@ a .navbar-brand {
 
 footer {
     margin-top: 20px;
+}
+
+.resume-button {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.blog-box {
+    margin-top: 100px;
+
+    .blog-img {
+        width: 35%;
+        margin: 10px;
+    }
+
+    .week2 .blog-img {
+        width: 30%;
+    }
+
+    .week3 .blog-img {
+        width: 15%;
+    }
+
+    video {
+        width: 40%;
+    }
 }

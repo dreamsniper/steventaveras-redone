@@ -14,10 +14,10 @@
 
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
-    
+
     <!--Fontawesom-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    
+
     <!--custom style sheet-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -39,6 +39,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -96,16 +99,58 @@
                     <p class="text-left">With my Graphic Design background i am comfortable designing logos, business cards and all sorts of printed materials. Using the Adobe creative suite. Need new icons or or simple animations? I’m at your service.</p>
                 </div>
             </div>
-            <a class="resume" href="resume.html">Resume</a>
+            <a class="resume-button" href="resume.html">Resume</a>
         </div>
 
         <div class="portfolio" id="portfolio">
             <div class="container text-center">
                 <h2>Portfolio</h2>
-                <hr />
+                <hr>
                 <div id="frontend">
                     <h3>Front-End Projects</h3>
                     <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="ttcee-site">
+                            <figure>
+                                <a href="#" data-toggle="modal" data-target="#ttcee-modal">
+                                    <img class="img-fluid img-thumbnail" src="images/ttcee.jpg" alt="Wix powered website" title="The Terance Coffee Event Experience"></a>
+                                <figcaption>Wix Powered Event Specialist Website</figcaption>
+                            </figure>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="ttcee-modal" tabindex="-1" role="dialog" aria-labelledby="wix-website" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content text-left">
+                                    <div class="modal-bg">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Wix Powered Website</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="project-for"><u>Commissioned Website</u></h6>
+                                            <p class="modal-description">This was a website that I was commissioned to redesigned from top to bottom using the Wix engine and my know-how of Javascript and HTML to give the site a sophisticated, elegant and clean look.</p>
+                                            <p><u>Requirements</u>:</p>
+                                            <p>Must include Diamond Videos</p>
+                                            <p>Fully functional store to order services.</p>
+
+                                            <p><u>Tools Used</u>:</p>
+                                            <ul class="tools-used">
+                                                <li>Wix site builder</li>
+                                                <li>HTML/CSS</li>
+                                                <li>Javascript</li>
+                                                <li>Photoshop</li>
+                                            </ul>
+                                            <a href="https://www.theterancecoffeeexperience.com/" target="_blank">Visit the site!</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="wordpress-comic">
                             <figure>
                                 <a href="#" data-toggle="modal" data-target="#dreamsniper-site-modal">
@@ -150,49 +195,6 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="LIM-page">
-                            <figure>
-                                <a href="#" data-toggle="modal" data-target="#LIM-page-modal">
-                                    <img class="img-fluid img-thumbnail" src="https://s19.postimg.cc/3qnk1glkz/fcc-tribute.jpg" alt="neil gaiman tribute page" title="tribute page freecodecamp.com"></a>
-                                <figcaption>Responsive Tribute Page</figcaption>
-                            </figure>
-                        </div>
-                        -- Modal --
-                        <div class="modal fade" id="tribute-page-modal" tabindex="-1" role="dialog" aria-labelledby="tribute-page" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content text-left">
-                                    <div class="modal-bg">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title">Responsive Tribute Page</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h6 class="project-for"><u>A Project for FreeCodeCamp</u></h6>
-                                            <p class="modal-description">I created this page as a project for an online course at <a href="https://www.freecodecamp.org/" target="_blank">www.freecodecamp.org</a> The subject i used for the project was one of my favorite writers, Neil Gaiman and his dark fantasy books.</p>
-                                            <p><u>Project Requirements</u>:</p>
-                                            <p>User Story 1: I can view a tribute page with an image and text.</p>
-                                            <p>User Story 2: I can click on a link that will take me to an external website with further information on the topic.</p>
-
-                                            <p><u>Tools Used</u>:</p>
-
-                                            <ul class="tools-used">
-                                                <li>HTML/CSS/SASS</li>
-                                                <li>JavaScript/jQuery</li>
-                                                <li>Bootstraps Framework</li>
-                                            </ul>
-                                            <a href="tribute-process.html">Learn more about this project</a>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- remove for new item
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="tribute-page">
                             <figure>
                                 <a href="#" data-toggle="modal" data-target="#tribute-page-modal">
@@ -200,7 +202,7 @@
                                 <figcaption>Responsive Tribute Page</figcaption>
                             </figure>
                         </div>
-                        -- Modal --
+
                         <div class="modal fade" id="tribute-page-modal" tabindex="-1" role="dialog" aria-labelledby="tribute-page" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content text-left">
@@ -234,7 +236,10 @@
                                 </div>
                             </div>
                         </div>
-                        -->
+                    </div>
+
+
+                    <div class="row">
 
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="spot-a-fish">
                             <figure>
