@@ -69,11 +69,13 @@ i {
   margin: 0.25%;
 }
 
+.process {
+  margin-top: 70px;
+}
 .process .top {
   margin-top: 30px;
 }
-
-.process-pic {
+.process .process-pic {
   margin: 30px;
 }
 
