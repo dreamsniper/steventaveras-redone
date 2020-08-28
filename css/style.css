@@ -142,4 +142,9 @@ footer {
   width: 40%;
 }
 
+#game {
+  margin: 0 auto;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

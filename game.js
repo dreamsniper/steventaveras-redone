@@ -35,8 +35,9 @@ function preload() {
 //////////////////////////////////////////
 
 function setup() {
-    createCanvas(720, 360);
-
+    const cnv = createCanvas(720, 360);
+    cnv.parent("game");
+    
     player = createSprite(100, 0);
     player.addAnimation("stand", player_stand);
     player.setCollider("circle", 0, 0, 32, 32);
