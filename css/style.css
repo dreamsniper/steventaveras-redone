@@ -147,4 +147,200 @@ footer {
   text-align: center;
 }
 
+.cointoss {
+  background-color: #4bc6fe;
+}
+.cointoss h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin: 10px;
+  font-family: "VT323", monospace;
+}
+.cointoss h2 {
+  font-size: 32px;
+  margin: 10px;
+  font-family: "Ranchers", cursive;
+}
+.cointoss h3 {
+  text-align: center;
+  color: #fff;
+  padding: 0.5em;
+  font-size: 32px;
+  margin: 10px;
+  font-family: "Ranchers", cursive;
+}
+.cointoss .start-button {
+  display: block;
+  margin: 0 auto;
+}
+.cointoss .start-button span {
+  color: #000;
+  text-align: center;
+  display: block;
+  margin: 1em auto;
+  padding: 1rem;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 3em;
+  border: 2px solid #FE8B05;
+  cursor: pointer;
+}
+.cointoss .back-button span {
+  display: block;
+  margin: 1em auto;
+  clear: both;
+  text-align: center;
+  padding: 1rem;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 3em;
+  border: 2px solid #2B4E72;
+  cursor: pointer;
+}
+.cointoss .try-again {
+  display: block;
+  margin: 0 auto;
+}
+.cointoss .buttons {
+  display: inline-block;
+  width: 100%;
+}
+.cointoss .buttons #head-button {
+  float: left;
+  margin: 1rem;
+  width: 30%;
+}
+.cointoss .buttons #tail-button {
+  float: right;
+  margin: 1rem;
+  width: 30%;
+}
+.cointoss .flip-menu {
+  display: none;
+  text-align: center;
+  background-color: #A9DA88;
+  margin: 0 auto;
+  padding: 1em;
+}
+.cointoss .flip-menu #flip-button {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 3em;
+  border: 2px solid #FE8B05;
+  cursor: pointer;
+}
+.cointoss .flip-menu .head-count h1 {
+  color: #FE8B05;
+}
+.cointoss .flip-menu .tail-count h1 {
+  color: #FE8B05;
+}
+.cointoss .flip-menu .results {
+  display: block;
+  margin: 1em auto;
+  background-color: #000;
+}
+.cointoss #accordion {
+  padding: 10px;
+}
+.cointoss #accordion h2 {
+  text-align: center;
+  background-color: #94BA65;
+  padding: 1rem;
+  width: 75%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+.cointoss #accordion h2:hover {
+  color: #fff;
+  background-color: #608039;
+  cursor: pointer;
+}
+.cointoss #accordion h2:active {
+  background-color: #71c03c;
+}
+.cointoss #accordion div {
+  display: none;
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 75%;
+  margin: 1rem auto;
+}
+.cointoss #accordion div ul {
+  color: #000;
+  margin: 1rem;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.cointoss #accordion div ul li {
+  display: block;
+  list-style: none;
+  padding: 10px;
+  margin: 6.6666666667px;
+}
+.cointoss .welcome-screen {
+  display: block;
+}
+.cointoss .welcome-screen #coin img {
+  display: block;
+  margin: auto;
+  width: 35%;
+  height: 35%;
+}
+.cointoss .welcome-screen h1 {
+  font-size: 3em;
+}
+.cointoss .game-screen {
+  display: none;
+}
+.cointoss .game-screen #head-coin {
+  display: inline-block;
+  float: left;
+  padding: 1em;
+  width: 40%;
+  height: 50%;
+}
+.cointoss .game-screen #head-coin img {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  height: 35%;
+}
+.cointoss .game-screen #tail-coin {
+  display: inline-block;
+  float: right;
+  padding: 1em;
+  width: 40%;
+  height: 50%;
+}
+.cointoss .game-screen #tail-coin img {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  height: 35%;
+}
+.cointoss .game-screen .coin-animation {
+  background-color: #000;
+  border-radius: 3em;
+  margin: 1rem;
+}
+.cointoss .game-screen .coin-animation img {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: 40%;
+  height: 40%;
+}
+.cointoss .end-screen {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

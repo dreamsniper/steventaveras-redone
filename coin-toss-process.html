@@ -17,9 +17,10 @@
 
     <!--custom style sheet-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
-<body>
+<body class="cointoss">
     <div class="container">
         <!-- Navigation -->
         <nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
@@ -49,40 +50,69 @@
         </nav>
 
         <div class="process text-center">
-            <div class="intro">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
+            <div class="container">
+                <div class="welcome-screen">
+                    <h1>Welcome To Coin-Toss</h1>
+                    <div id="coin">
+                    </div>
+                    <div id="accordion">
+                        <h2>The rules of the game</h2>
+                        <div>
+                            <ul>
+                                <li>Rule 1: Enter a username.</li>
+                                <li>Rule 2: select the side of the coin you want to use. </li>
+                                <li>Rule 3: Press the flip button to flip the coin</li>
+                                <li>Rule 4: Repeat as often as you would like</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="start-button">
+                        <p><span>Press to Play</span></p>
+                    </div>
 
-            <div class="description">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
+                </div>
+                <div class="game-screen">
+                    <div id="username-prompt"></div>
+                    <h1>Choose your side of the coin</h1>
+                    <div class="container">
+                        <div id="head-coin">
+                        </div>
+                        <div id="tail-coin">
+                        </div>
+                        <div class="container buttons">
+                            <button id="head-button">head</button>
+                            <button id="tail-button">Tails</button>
+                        </div>
+                        <div class="container flip-menu">
 
-            <div class="features">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
+                            <div class="coin-animation"></div>
+                            <div id="flip-button">
+                                <p>Flip the Switch</p>
+                            </div>
+                            <div class="results"></div>
+                            <div id="heads-count" class="head-count">
+                            </div>
+                            <div id="tails-count" class="tail-count">
+                            </div>
+                        </div>
+                        <div class="back-button">
+                            <p><span>Back to Start Page</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="end-screen">
+                    <div class="you-win">
+                        <p>YOU WIN!!!!</p>
+                    </div>
+                    <div class="you-lose">
+                        <p>YOU LOSE!!!!</p>
+                    </div>
+                    <div class="try-again">
+                        <p><span>Please Try Again</span></p>
+                    </div>
+                </div>
             </div>
-
-            <div class="sitemap">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="styles">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="sitemap">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="wireframes">
-            </div>
-
-            <div class="mockups process-pic">
-                <img class="img-fluid" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <a href="http://steventaveras.com/gallery/cointoss.html" target="_blank">See the final product</a>
         </div>
-
         <footer class="footer">
             <div class="container text-center">
                 <div>
@@ -109,6 +139,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="scripts/cointoss.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>

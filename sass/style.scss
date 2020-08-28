@@ -1,5 +1,29 @@
 //colors
 $gray: grey;
+$color_1: #fff; //white
+$color_3: cornsilk;
+$color_4: cyan;
+$color_5: #3a3a3a; //dark grey
+$color_6: #000; //black
+$color_7: #FE8B05; //tan/orange
+$font_family_1: 'VT323',
+monospace;
+$font_family_2: 'Ranchers',
+cursive;
+$background_color_2: rgba(255, 0, 0, 0.6); //transparent red
+$background_color_3: rgba(107, 142, 35, 0.4); //transparent green
+$background_color_4: dimgray; //light grey
+$background_color_5: rgba(125, 125, 125, 0.7); //transparent grey
+$background_color_6: rgba(255, 255, 255, 0);
+$background_color_7: rgba(153, 102, 102, 0.3);
+$background_color_8: rgba(255, 128, 0, 0.5);
+$background_color_9: #668284; //dark jade green
+$background_color_10: rgba(255, 255, 255, .5); //transparent
+$background_color_11: #4bc6fe; //light blue
+$background_color_13: #A9DA88; //light pastel green
+$background_color_15: #94BA65; //pastel green
+$background_color_16: #608039; //jade green
+$background_color_17: #71c03c; //light green
 
 //fonts
 $font_0: Josefin Sans;
@@ -167,4 +191,209 @@ footer {
 #game{
     margin: 0 auto;
     text-align: center;
+}
+
+/////////coin toss page//////////////
+.cointoss {
+    background-color: $background_color_11;
+    h1 {
+        text-align: center;
+        color: $color_1;
+        font-size: 40px;
+        margin: 10px;
+        font-family: $font_family_1;
+    }
+    h2 {
+        font-size: 32px;
+        margin: 10px;
+        font-family: $font_family_2;
+    }
+    h3 {
+        text-align: center;
+        color: $color_1;
+        padding: .5em;
+        font-size: 32px;
+        margin: 10px;
+        font-family: $font_family_2;
+    }
+    .start-button {
+        display: block;
+        margin: 0 auto;
+        span {
+            color: $color_6;
+            text-align: center;
+            display: block;
+            margin: 1em auto;
+            padding: 1rem;
+            width: 30%;
+            background-color: $color_1;
+            border-radius: 3em;
+            border: 2px solid #FE8B05;
+            cursor: pointer;
+        }
+    }
+    .back-button {
+        span {
+            display: block;
+            margin: 1em auto;
+            clear: both;
+            text-align: center;
+            padding: 1rem;
+            width: 30%;
+            background-color: $color_1;
+            border-radius: 3em;
+            border: 2px solid #2B4E72;
+            cursor: pointer;
+        }
+    }
+    .try-again {
+        display: block;
+        margin: 0 auto;
+    }
+    .buttons {
+        display: inline-block;
+        width: 100%;
+        #head-button {
+            float: left;
+            margin: 1rem;
+            width: 30%;
+        }
+        #tail-button {
+            float: right;
+            margin: 1rem;
+            width: 30%;
+        }
+    }
+    .flip-menu {
+        display: none;
+        text-align: center;
+        background-color: $background_color_13;
+        margin: 0 auto;
+        padding: 1em;
+        #flip-button {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            padding: 1em;
+            width: 30%;
+            background-color: $color_1;
+            border-radius: 3em;
+            border: 2px solid #FE8B05;
+            cursor: pointer;
+        }
+        .head-count {
+            h1 {
+                color: $color_7;
+            }
+        }
+        .tail-count {
+            h1 {
+                color: $color_7;
+            }
+        }
+        .results {
+            display: block;
+            margin: 1em auto;
+            background-color: $color_6;
+        }
+    }
+    #accordion {
+        padding: 10px;
+        h2 {
+            text-align: center;
+            background-color: $background_color_15;
+            padding: 1rem;
+            width: 75%;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+            margin: 0 auto;
+            &:hover {
+                color: $color_1;
+                background-color: $background_color_16;
+                cursor: pointer;
+            }
+            &:active {
+                background-color: $background_color_17;
+            }
+        }
+        div {
+            display: none;
+            background-color: $color_1;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 2rem;
+            width: 75%;
+            margin: 1rem auto;
+            ul {
+                color: $color_6;
+                margin: 1rem;
+                padding: 0;
+                width: 100%;
+                margin: 0 auto;
+                li {
+                    display: block;
+                    list-style: none;
+                    padding: 10px;
+                    margin: 6.6666666667px;
+                }
+            }
+        }
+    }
+    .welcome-screen {
+        display: block;
+        #coin {
+            img {
+                display: block;
+                margin: auto;
+                width: 35%;
+                height: 35%;
+            }
+        }
+        h1 {
+            font-size: 3em;
+        }
+    }
+    .game-screen {
+        display: none;
+        #head-coin {
+            display: inline-block;
+            float: left;
+            padding: 1em;
+            width: 40%;
+            height: 50%;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 35%;
+                height: 35%;
+            }
+        }
+        #tail-coin {
+            display: inline-block;
+            float: right;
+            padding: 1em;
+            width: 40%;
+            height: 50%;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 35%;
+                height: 35%;
+            }
+        }
+        .coin-animation {
+            background-color: $color_6;
+            border-radius: 3em;
+            margin: 1rem;
+            img {
+                display: block;
+                margin: .5rem auto;
+                padding: .5rem;
+                width: 40%;
+                height: 40%;
+            }
+        }
+    }
+    .end-screen {
+        display: none;
+    }
 }
