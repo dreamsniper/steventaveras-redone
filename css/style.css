@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Days+One|Open+Sans:400,800");
 body {
   font-family: Josefin Sans, sans-serif;
 }
@@ -341,6 +342,115 @@ footer {
 }
 .cointoss .end-screen {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.weatherapp {
+  font-family: Days one, sans-serif;
+  color: #fff;
+  background-color: #b28cd9;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.weatherapp figure {
+  margin: 1em auto;
+}
+.weatherapp figure canvas {
+  width: 70%;
+}
+.weatherapp main {
+  font-family: Open sans, sans-serif;
+  width: 60%;
+  background-color: rgba(254, 194, 5, 0.3);
+  border-radius: 15px;
+  padding: 1em;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+.weatherapp main .paper {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 55px 50px -35px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .weatherapp main .paper {
+    /* Styles */
+    position: relative;
+  }
+}
+.weatherapp main #current-location,
+.weatherapp main #current-country {
+  font-weight: 800;
+  text-shadow: 2px 2px 4px #000000;
+  /* Smartphones (portrait and landscape) ----------- */
+}
+@media only screen and (max-width: 440px) {
+  .weatherapp main #current-location,
+.weatherapp main #current-country {
+    /* Styles */
+    font-size: 11pt;
+  }
+}
+.weatherapp main #weather-description {
+  font-family: Days one, sans-serif;
+  font-size: 15pt;
+  letter-spacing: 0.21em;
+  color: orange;
+  text-shadow: 2px 2px 4px #000000;
+}
+.weatherapp main #local-temperature {
+  font-weight: 800;
+  font-size: 20pt;
+  text-shadow: 2px 2px 4px #000000;
+}
+@media only screen and (min-width: 768px) {
+  .weatherapp main #local-temperature {
+    /* Styles */
+    position: absolute;
+    top: 1em;
+    left: 0.5em;
+    font-size: 40pt;
+  }
+}
+.weatherapp main #high-temp {
+  color: #000;
+}
+@media only screen and (min-width: 768px) {
+  .weatherapp main #high-temp {
+    /* Styles */
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    font-size: 20pt;
+  }
+}
+.weatherapp main #low-temp {
+  color: #000;
+}
+@media only screen and (min-width: 768px) {
+  .weatherapp main #low-temp {
+    /* Styles */
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 20pt;
+  }
+}
+.weatherapp button {
+  margin: 1em auto;
+}
+.weatherapp footer {
+  margin-top: 100%;
+}
+.weatherapp footer a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

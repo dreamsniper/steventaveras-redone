@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Days+One|Open+Sans:400,800");
+
 //colors
 $gray: grey;
 $color_1: #fff; //white
@@ -28,6 +30,8 @@ $background_color_17: #71c03c; //light green
 //fonts
 $font_0: Josefin Sans;
 $font_1: sans-serif;
+$font-stack: Days one, sans-serif;
+$font-stack-2: Open sans, sans-serif;
 
 body {
     font-family: $font_0, $font_1;
@@ -396,4 +400,105 @@ footer {
     .end-screen {
         display: none;
     }
+}
+
+////////weather app ///////////
+* {
+  box-sizing: border-box;
+}
+.weatherapp {
+  font-family: $font-stack;
+  color: #fff;
+  background-color: #b28cd9;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  figure {
+    margin: 1em auto;
+    canvas {
+      width: 70%;
+    }
+  }
+  main {
+    font-family: $font-stack-2;
+    width: 60%;
+    background-color: rgba(254, 194, 5, 0.3);
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3),
+      0 55px 50px -35px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+    .paper {
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 10px;
+      padding: 1em;
+      box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3),
+        0 55px 50px -35px rgba(0, 0, 0, 0.3),
+        0 85px 60px -25px rgba(0, 0, 0, 0.1);
+      @media only screen and (min-width: 768px) {
+      /* Styles */
+      position: relative;
+    }
+    }
+    #current-location,
+    #current-country {
+      font-weight: 800;
+      text-shadow: 2px 2px 4px #000000;
+      /* Smartphones (portrait and landscape) ----------- */
+      @media only screen and (max-width: 440px) {
+        /* Styles */
+        font-size: 11pt;
+      }
+    }
+    #weather-description {
+      font-family: $font-stack;
+      font-size: 15pt;
+      letter-spacing: 0.21em;
+      color: orange;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #local-temperature {
+      font-weight: 800;
+      font-size: 20pt;
+      text-shadow: 2px 2px 4px #000000;
+      @media only screen and (min-width: 768px) {
+        /* Styles */
+        position: absolute;
+        top: 1em;
+        left: .5em;
+        font-size: 40pt;
+      }
+    }
+    #high-temp{
+      color: #000;
+       @media only screen and (min-width: 768px) {
+        /* Styles */
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        font-size: 20pt;
+      }
+    }
+    #low-temp {
+      color: #000;
+       @media only screen and (min-width: 768px) {
+        /* Styles */
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        font-size: 20pt;
+      }
+    }
+  }
+  button {
+    margin: 1em auto;
+  }
+  footer {
+    margin-top: 100%;
+    a {
+      color: #fff;
+    }
+  }
 }

@@ -1,87 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <title>CodePen - FCC: Show Local Weather App</title>
+    <title>FCC: Local Weather App</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="This is Steven Taveras's Front End Development and Graphic Design website. I have samples of my java script work and plan on updating the sites look and add a blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a Local Weather App for Free Code Camp using geolocation">
+    <!--for remote bootsraps styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/9bacc3de6f.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>Steven Taveras | Front End Developer</title>
-
-    <!--for remote bootstraps styles-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
-
-    <!--custom style sheet-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
-            <div class="container">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <a class="navbar-brand" href="#" id="home">STEVEN TAVERAS</a>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-link">
-                        <a class="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-link">
-                        <a class="../#contact">Contact</a>
-                    </li>
+<body class="weatherapp">
+    <!-- partial:index.partial.html -->
+
+    <body>
+        <div class="container text-center">
+            <h1 id="headline">Steven's Weather App</h1>
+            <figure>
+                <canvas id="icon1"></canvas>
+            </figure>
+            <main class="container">
+                <div class="paper">
+                    <div>
+                        <h1 id="current-country"></h1>
+                    </div>
+                    <div>
+                        <h2 id="current-location">Getting Location...</h2>
+                    </div>
+                    <div id="weather-description"></div>
+                    <div id="local-temperature"></div>
+                    <div id="high-temp"></div>
+                    <div id="low-temp"></div>
                 </div>
-            </div>
-        </nav>
-
-        <div class="process text-center">
-            <div class="intro">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="description">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="features">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="sitemap">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="styles">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="sitemap">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="wireframes">
-            </div>
-
-            <div class="mockups process-pic">
-                <img class="img-fluid" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <a href="https://codepen.io/dreamsniper/full/vJWwVY/" target="_blank">See the final product</a>
-        </div>
-
-        <footer class="footer">
+                <button class="btn-primary" id="cfButton">Toggle Celcius/Fahrenheit</button>
+            </main>
+            <footer class="footer">
             <div class="container text-center">
                 <div>
                     <a href="https://codepen.io/dreamsniper/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
@@ -98,15 +60,15 @@
                 <p><a href="#home">Back to Top</a></p>
             </div>
         </footer>
-    </div>
-    <!--end of main container-->
+        </div>
+        <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+    </body>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://rawgit.com/darkskyapp/skycons/master/skycons.js'></script>
+    <script src='https://rawgithub.com/darkskyapp/skycons/master/skycons.js'></script>
+    <script src="scripts/weather-app.js"></script>
 
-    <script src="https://use.fontawesome.com/9bacc3de6f.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
 </html>
