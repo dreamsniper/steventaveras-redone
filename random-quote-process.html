@@ -1,25 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <title>CodePen - FCC: Random Quote Machine</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="This is Steven Taveras's Front End Development and Graphic Design website. I have samples of my java script work and plan on updating the sites look and add a blog">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>FCC: Random Quote Machine</title>
+    <meta name="description" content="This site gives random quotes and can be tweeted on twitter.">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/9bacc3de6f.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-    <title>Steven Taveras | Front End Developer</title>
-
-    <!--for remote bootstraps styles-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
-
-    <!--custom style sheet-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body class="quote-machine">
+    <!-- partial:index.partial.html -->
     <div class="container">
         <!-- Navigation -->
         <nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
@@ -48,42 +47,20 @@
             </div>
         </nav>
 
-        <div class="process text-center">
-            <div class="intro">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
+        <div class="container main">
+            <h1 class="text-center">Random Quote Machine</h1>
+            <div class="container-fluid quote-display" id="quote-display">
+                <!--   quote will display here -->
+                <p></p>
             </div>
-
-            <div class="description">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
+            <div class="container text-center ">
+                <button class="btn btn-primary" id="quote-button">New Quote</button>
+                <i id="tweet-button" class="fa fa-twitter fa-2x"> </i>
             </div>
-
-            <div class="features">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="sitemap">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="styles">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="sitemap">
-                <img class="img-fluid process-pic" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <div class="wireframes">
-            </div>
-
-            <div class="mockups process-pic">
-                <img class="img-fluid" src="http://via.placeholder.com/350x150" alt="" title="">
-            </div>
-
-            <a href="https://codepen.io/dreamsniper/full/OgbYBZ/" target="_blank">See the final product</a>
+            <div id="log"></div>
         </div>
 
-        <footer class="footer">
+        <footer class="footer fixed-bottom">
             <div class="container text-center">
                 <div>
                     <a href="https://codepen.io/dreamsniper/" target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
@@ -96,19 +73,21 @@
                     <a href="https://forum.freecodecamp.com/users/dreamsniper/summary" target="_blank"><i class="fa fa-free-code-camp fa-2x" aria-hidden="true"></i></a>
                 </div>
                 <p>Copyright &copy; 2017 Steven Taveras</p>
-                <p><a href="www.dreamsniper.com">www.dreamsniper.com</a></p>
-                <p><a href="#home">Back to Top</a></p>
+                <p><a href="www.dreamsniper.com">www.dreamsniper.com | </a><a href="www.steventaveras.com">www.steventaveras.com</a></p>
             </div>
         </footer>
     </div>
-    <!--end of main container-->
-
-    <script src="https://use.fontawesome.com/9bacc3de6f.js"></script>
+    <!-- partial -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    
+    <script src="scripts/quote-machine.js"></script>
+
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Days+One|Open+Sans:400,800");
+@import url("https://fonts.googleapis.com/css?family=Tangerine|Righteous|Archivo+Black|Cormorant+Garamond");
 body {
   font-family: Josefin Sans, sans-serif;
 }
@@ -451,6 +452,65 @@ footer {
 }
 .weatherapp footer a {
   color: #fff;
+}
+
+.quote-machine {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background: url("https://i.postimg.cc/C1QVfrry/pexels-fox-212324.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.quote-machine .container {
+  height: 90%;
+}
+.quote-machine h1 {
+  margin-top: 20%;
+  font-family: "Tangerine", serif;
+  text-shadow: 4px 4px 4px #000;
+  color: #fff;
+  font-size: 4em;
+  padding: 0.5em;
+}
+.quote-machine button {
+  font-family: "Cormorant Garamond", serif;
+  background-color: #fff;
+  font-size: 1em;
+  border-radius: 10px;
+  width: 25%;
+}
+.quote-machine .quote-display {
+  word-wrap: break-word;
+  font-family: cursive;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 60%;
+  height: 100%;
+  margin: 1em auto;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px -2px #aaa;
+}
+.quote-machine .quote-display p {
+  font-family: "Righteous", sans-serif;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+.quote-machine footer {
+  color: #fff;
+  margin: 1em auto 1em auto;
+}
+.quote-machine footer a {
+  color: #ADD8E6;
+  margin: 0 auto;
+}
+.quote-machine i {
+  color: #fff;
+  margin: 0 auto;
+}
+.quote-machine i:hover {
+  color: #f00;
 }
 
 /*# sourceMappingURL=style.css.map */
