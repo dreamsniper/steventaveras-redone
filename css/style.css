@@ -86,7 +86,7 @@ i {
 }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 iframe {
@@ -115,7 +115,7 @@ a .navbar-brand {
 }
 
 #Experience {
-  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 footer {
@@ -394,7 +394,7 @@ footer {
 }
 @media only screen and (max-width: 440px) {
   .weatherapp main #current-location,
-.weatherapp main #current-country {
+  .weatherapp main #current-country {
     /* Styles */
     font-size: 11pt;
   }
@@ -515,6 +515,10 @@ footer {
 
 .expose-video {
   width: 60%;
+}
+
+#lim-menu, gia-menu {
+  list-style: circle;
 }
 
 /*# sourceMappingURL=style.css.map */
