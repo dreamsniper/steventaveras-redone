@@ -78,4 +78,8 @@ a .navbar-brand {
   margin: 1em;
   width: 75%; }
 
+#lim-menu, gia-menu{
+    list-style: circle;
+}
+
 /*# sourceMappingURL=style.css.map */
