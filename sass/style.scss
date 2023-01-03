@@ -13,6 +13,7 @@ $font_family_1: 'VT323',
 monospace;
 $font_family_2: 'Ranchers',
 cursive;
+$background_color_b: rgba(0, 180, 255, 0.6); //transparent blue
 $background_color_2: rgba(255, 0, 0, 0.6); //transparent red
 $background_color_3: rgba(107, 142, 35, 0.4); //transparent green
 $background_color_4: dimgray; //light grey
@@ -86,6 +87,8 @@ h2 {
 .portfolio {
     margin-top: 40px;
     margin-bottom: 40px;
+    padding: 1rem;
+    background-color: $color_3;
 }
 
 .contact {
@@ -588,7 +591,7 @@ footer {
     }
 
     .quote-display {
-        
+
         word-wrap: break-word;
         font-family: cursive;
         //text-shadow: 4px 4px 4px #38423a;
@@ -628,10 +631,117 @@ footer {
 
 }
 
-.expose-video{
+.expose-video {
     width: 60%;
 }
 
-#lim-menu, gia-menu{
+#lim-menu,
+gia-menu {
     list-style: circle;
+}
+
+/*contact form*/
+form {
+    background-color: var(--color-black);
+    width: 50%;
+    border-radius: 10px 15px 15px 10px;
+    /*border: 5px solid #FFFF00;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+
+.form-group {
+    background-color: var(--color-green);
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+#title {
+    text-align: center;
+    line-height: 1.2;
+    color: var(--color-white);
+}
+
+#description {
+    text-align: center;
+    line-height: 1.2;
+    color: var(--color-white);
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-black);
+    margin: 0;
+    display: block;
+}
+
+.form-control {
+    display: block;
+    width: 95%;
+    height: 2.375rem;
+    padding: 0.4rem .5rem;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    background-clip: padding-box;
+    border: 1px solid var(--color-blue);
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+textarea {
+    display: block;
+    width: 95%;
+    padding: 0.4rem .5rem;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+}
+
+#submit {
+    margin-bottom: 2rem;
+}
+
+.jumbotron-lim {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.about-lim-project {
+    background-color: $background_color_b;
+    padding: 2rem;
+}
+
+.lim-video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*  object-fit is not supported on IE  */
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.jumbotron .container {
+    z-index: 2;
+    position: relative;
+}
+
+.hashtags {
+    font-family: $font_family_2;
+    color: $color_1;
+}
+
+.coca-cola-commercial img {
+    width: 100%;
+    padding: 1em;
+
+}
+
+.coke-video {
+    width: 100%;
 }
