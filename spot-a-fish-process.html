@@ -20,56 +20,179 @@
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded">
+
+        <a class="navbar-brand" href="#" id="home">STEVEN TAVERAS</a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contact-form-modal">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <!-- Navigation -->
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <a class="navbar-brand" href="#" id="home">STEVEN TAVERAS</a>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
+        <div class="jumbotron jumbotron-fluid jumbotron-lim">
+            <video class="lim-video" autoplay muted loop>
+                <source src="videos/spot-a-fish.mp4" type="video/mp4">
+            </video>
+            <div class="container text-white">
+
+                <h1 class="display-4">Environmentally Conscious Javascript Game</h1>
+                <p class="lead">Spot-A-Fish</p>
+                <!--                <p><a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=hd67UPvA-zA" role="button">See Event Video</a></p>-->
             </div>
-        </nav>
-
-        <div class="process text-center">
-            <h1>Spot-A-Fish</h1>
-            <h2>P5.js Game</h2>
-            <p>The game is about keeping the oceans clean to save the fishes. The rules are simple, catch the cans before they kill the fish using a net that acts as a mouse trail.</p>
-            <p>Its aimed t a younger audience and is meant to bring awareness of pollution in the seas.</p>
+            <!-- /.container -->
         </div>
+        <!-- /.jumbotron -->
 
-        <div id="game">
-            <script src="scripts/p5.min.js"></script>
-            <script src="scripts/p5.play.js"></script>
-            <script src="game.js"></script>
-        </div>
 
-        <div>
-            <footer class="footer">
-                <div class="container text-center">
-                    <div>
-                        <a href="https://www.facebook.com/steven.taveras1" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-                        <a href="https://github.com/dreamsniper" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/steven-taveras-81475b75/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+
+        <div class="process container">
+            <h4>Try Out The Game</h4>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div id="game">
+                        <script src="scripts/p5.min.js"></script>
+                        <script src="scripts/p5.play.js"></script>
+                        <script src="game.js"></script>
                     </div>
-                    <p>Copyright &copy; Steven Taveras</p>
                 </div>
-            </footer>
+                <div class="col-md-4 about-lim-project">
+                    <p class="hashtags">#AdobePhotoshop #AdobeIllustrator #P5.js #JavaScript</p>
+
+                    <h4>P5.js Game</h4>
+                    <p>The game is about keeping the oceans clean to save the fishes. The rules are simple, catch the cans before they kill the fish using a net that acts as a mouse trail.</p>
+                    <p>Its aimed at a younger audience and is meant to bring awareness of pollution in the seas.</p>
+
+                    <h6><u>Project Requirements</u>:</h6>
+                    <ul>
+                        <li>Game must utilize the P5.js game javascript game engine.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contact-form-modal" tabindex="-1" role="dialog" aria-labelledby="contact-form" ariabrochure-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content text-left">
+                    <div class="modal-bg">
+                        <div class="modal-header">
+                            <h1 id="title">Steven's Survey Form</h1>
+                            <p id="description">Thank you for taking the time to improve this site</p>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="survey-form">
+                                <div class="form-group">
+                                    <label id="name-label" for="name">* Name</label>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label id="email-label" for="email">* Email</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label id="number-label" for="age">Age (Optional)</label>
+                                    <input type="number" name="number" id="number" min="12" max="99" class="form-control" placeholder="Age" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <p>What do you You like about this design?</p>
+                                    <select id="dropdown" name="role" class="form-control" required>
+                                        <option disabled selected value>Make a selection</option>
+                                        <option value="navigation">Navigation</option>
+                                        <option value="portfolio">Portfolio</option>
+                                        <option value="layout">Layout</option>
+                                        <option value="colors">Colors</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <p>What should I add more of on my site?</p>
+                                    <label>
+                                        <input type="radio" name="extra" value="art" class="input-radio">Art
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="extra" value="graphics" class="input-radio">Motion Graphics
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="extra" value="animation" class="input-radio">Animation
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <p>Is there anything you would like to see improved?</p>
+                                    <label for="color">
+                                        <input id="color" value="colors" type="checkbox" name="improvement"> Colors
+                                    </label>
+                                    <label for="layout">
+                                        <input id="layout" value="layout" type="checkbox" name="improvement"> Layout
+                                    </label>
+                                    <label for="nav">
+                                        <input id="nav" value="nav" type="checkbox" name="improvement"> Navigation
+                                    </label>
+                                    <label for="artwork">
+                                        <input id="artwork" value="artwork" type="checkbox" name="improvement"> Artwork
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <p>Please Leave a comment</p>
+                                    <label for="comments">
+                                        <textarea id="comments" class="text-area" placeholder="Leave a message..." name="comment" rows="4" cols="50"></textarea>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" id="submit" class="submit-button">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--end of main container-->
+    <footer class="footer">
+        <div class="container text-center">
+            <div>
+                <a href="https://www.facebook.com/steven.taveras1" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                <a href="https://github.com/dreamsniper" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/steven-taveras-81475b75/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <p>Copyright &copy; Steven Taveras</p>
+        </div>
+    </footer>
 
     <script src="https://use.fontawesome.com/9bacc3de6f.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
